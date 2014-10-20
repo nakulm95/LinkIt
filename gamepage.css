@@ -1,0 +1,157 @@
+body, html {
+	background: rgb(153, 153, 153);
+	font-family: Arial, sans-serif;
+	height: 100%;
+}
+
+#mainNode, #temp1Node, #temp2Node {
+
+}
+
+#box4 .box {
+	background: green;
+}
+
+#box1 .box {
+	background: pink;
+}
+
+#box2 .box {
+	background: red;
+}
+
+#box3 .box {
+	background: cyan;
+}
+
+.bigBox {
+	position: absolute;
+	width: 116px;
+	height: 50px;
+}
+
+.straightArrow {
+	position: absolute;
+	width: 70px;
+	height: 50px;
+	background-image: url('straightArrow.png');
+	background-size: 70px 50px;
+}
+
+#error {
+	display: none;
+}
+
+.box {
+	width: 50px;
+	height: 50px;
+	border: 4px solid black;
+	float: left;
+	margin: 0;
+	text-align: center;
+	font-size: 24pt;
+	vertical-align: middle;
+	line-height: 50px;
+}
+
+.leftBox {
+	border-radius: 10px 0px 0px 10px;
+}
+
+.rightBox {
+	border-radius: 0 10px 10px 0;
+}
+
+a, button, .panel-body {
+	background: rgb(43, 128, 210);
+	color: white;	
+}
+
+.panel {
+	text-align: center;
+}
+
+a, button {
+	margin-left: 30px;
+}
+
+#gameboard {
+	position: absolute;
+}
+
+.edit  {
+	width: 100px;
+}
+
+.placeholder {
+	border: 2px black solid;
+	border-radius: 4px;
+	float: right;
+}
+
+#solution {
+	width: 100%;
+}
+
+* {
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -70px; /* the bottom margin is the negative value of the footer's height */
+}
+
+.footer, .push {
+    height: 142px; /* .push must be the same height as .footer */
+}
+
+#failure, #sucess, #warning, #tempWarning {
+	color: white;
+	text-align: center;
+	font-size: 40px;
+	display: none;
+}
+
+#failure {
+	background: red;
+}
+
+#warning {
+	background: yellow;
+}
+
+#sucess {
+	background: green;
+}
+
+a.disabled {
+   pointer-events: none;
+   cursor: default;
+}
+
+.circmain, .circtemp1, .circtemp2 {
+	position: absolute;
+	background-color: black;
+	display: none;
+}
+
+#upmain, #uptemp1, #uptemp2 {
+	height: 50px;
+	width: 5px;
+}
+
+#horizmain, #horiztemp1, #horiztemp2 {
+	height: 5px;
+}
+
+#downmain, #downtemp1, #downtemp2 {
+	height: 50px;
+	width: 5px;
+}
+
+#arrow {
+	z-index: -1;
+}

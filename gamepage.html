@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Link-It</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Latest compiled and minified CSS -->
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+		<link rel="icon" type="image/png" href="linkitfav.png"/>
+
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="gamepage.css">
+		<script src="main.js"></script>
+	</head>
+
+	<div class='wrapper'>
+		<body>
+			<div class="jumbotron">
+				<div class="container-fluid">
+		            <div class="row">
+		                <div class="col-xs-2">
+		                    <div class="panel panel-primary">
+						  		<div class="panel-body">
+						    		Number of Moves
+						  		</div>
+						  		<div id="moveCount" class="panel-footer">0</div>
+							</div>
+		                </div>
+
+		                <div class="col-xs-2">
+		                    <div class="panel panel-primary">
+						  		<div class="panel-body">
+						    		Best Solution
+						  		</div>
+						  		<div id="bestSolution" class="panel-footer">3</div>
+							</div>
+		                </div>
+
+		                <div class="col-xs-8">
+							<div class="placeholder">
+								<img id="solution" src="linkitfinal1.png">
+							</div>
+		                </div>
+		            </div>
+		        </div>
+	        </div>
+
+        	<div id="error">
+        		<p class="">Cannot connect node to itself!</p>
+        	</div>
+
+        	<div id="tempWarning">
+				<p class="">You have used all of the available temporary nodes.</p>
+			</div>
+
+			<div id="sucess">
+				<p class="">You Win!</p>
+			</div>
+
+			<div id="failure">
+				<p class="">You Lose...</p>
+			</div>
+
+			<div id="warning">
+				<p class="">You may want to undo that.</p>
+			</div>
+
+			<div id="gameboard">
+                <div id="arrow"></div>
+                <div id="upmain" class="circmain"></div>
+                <div id="horizmain" class="circmain"></div>
+                <div id="downmain" class="circmain"></div>
+                <div id="uptemp1" class="circtemp1"></div>
+                <div id="horiztemp1" class="circtemp1"></div>
+                <div id="downtemp1" class="circtemp1"></div>
+                <div id="uptemp2" class="circtemp2"></div>
+                <div id="horiztemp2" class="circtemp2"></div>
+                <div id="downtemp2" class="circtemp2"></div>
+			</div>
+	    </body>
+
+	    <div class='push'></div>
+	</div>
+
+	<div class='footer'>
+		<div id="all-buttons">
+			<button id="addTemp" type="button" class="btn btn-lg">Add Temp Node</button>
+			<a href="gamepage.html" class="btn btn-lg" role="button">Restart</a>
+			<a href="http://itzaaron93.wix.com/linkit" class="btn btn-lg" role="button">Back to Main Menu</a>
+			<button class="btn btn-lg disabled" role="button" id="next">Next Level</button>
+		</div>
+	</div>	
